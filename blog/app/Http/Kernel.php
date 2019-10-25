@@ -34,6 +34,9 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:60,1',
         ],
+        'age' =>[
+            \App\Http\Middleware\CheckAge::class,
+        ],
     ];
 
     /**
